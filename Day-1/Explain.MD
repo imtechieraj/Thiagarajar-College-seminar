@@ -186,3 +186,35 @@ Register and Login form
 
 mongodb+srv://wissenskill:hOODUfqG4BZO49Ct@usermanagement.glmti.mongodb.net/myapp?retryWrites=true&w=majority&appName=UserManagement
 
+### 8. Basic MongoDB Query 
+
+
+1. **Show Databases**:
+   ```javascript
+   show dbs;
+   ```
+
+2. **Use a Database**:
+   ```javascript
+   use yourDatabaseName;
+   ```
+
+3. **Find Documents** (in a collection):
+   ```javascript
+   db.collectionName.find();
+   ```
+
+4. **Insert Document**:
+   ```javascript
+   db.collectionName.insert({ name: "John", age: 30 });
+   ```
+
+5. **Update Document**:
+   ```javascript
+   db.collectionName.update({ name: "John" }, { $set: { age: 31 } });
+   ```
+
+6. **Delete Document**:
+   ```javascript
+   db.collectionName.remove({ name: "John" });
+   ```
